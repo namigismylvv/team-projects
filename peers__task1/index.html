@@ -1,13 +1,1782 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    
- <script src="index.js"></script>   
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products Page</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <section class="top-bar">
+        <div class="container">
+          <div class="upper-header">
+            <div class="phone-number">
+              <img src="images_ilaha/phone-call (3) 1.svg" alt="Phone Icon" />
+              <span>+748 383 23 14</span>
+            </div>
+            <div class="description">
+              <a href="#">Terms of Use</a>
+              <a href="#">FAQ</a>
+              <a href="#">Customer service</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="bottom-bar">
+        <div class="container">
+          <div class="main-header">
+            <div class="logo-part">
+              <h1>Snobella</h1>
+              <form class="search-bar">
+                <input type="text" placeholder="Search all product" />
+                <button type="submit">
+                  <img src="images_ilaha/search 1.svg" alt="Search Icon" />
+                </button>
+              </form>
+              <div class="sign-in">
+                <img src="images_ilaha/avatar 1.svg" />
+                <span>Sign In</span>
+                <img src="images_ilaha/heart (2).svg" />
+                <span>Wishlist</span>
+                <img src="images_ilaha/bag.svg" />
+                <span>Basket</span>
+              </div>
+            </div>
+            <div class="links-part">
+              <a href="#">Evening bags</a>
+              <a href="#">Shoulder bag</a>
+              <a href="#">Backpack</a>
+              <a href="#">Handbag</a>
+              <a href="#">Postman bag</a>
+              <a href="#">Belt bags</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+    <main>
+      <section id="hero">
+        <div class="container hero__container">
+          <div class="hero">
+            <div class="hero__slider">
+              <div class="hero__slide">
+                <div class="hero__text">
+                  <span>30% off</span>
+                  <h2>Handbag products</h2>
+                  <p>
+                    It is a long established fact that a reader will be
+                    distracted by the readable content expound the actual
+                    teachings of the great explorer
+                  </p>
+                  <button>Shop now</button>
+                </div>
+                <div class="hero__img">
+                  <img src="images_namig/bag_hero.png" alt="" />
+                </div>
+              </div>
+
+              <!-- SLIDE 2 -->
+              <div class="hero__slide">
+                <div class="hero__text">
+                  <span>50% off</span>
+                  <h2>New Collection</h2>
+                  <p>
+                    Discover our new handbag collection crafted with premium
+                    materials and modern design.
+                  </p>
+                  <button>Shop now</button>
+                </div>
+                <div class="hero__img">
+                  <img src="images_namig/bag_hero.png" alt="" />
+                </div>
+              </div>
+
+              <!-- SLIDE 3 -->
+              <div class="hero__slide">
+                <div class="hero__text">
+                  <span>20% off</span>
+                  <h2>Summer Sale</h2>
+                  <p>
+                    Get ready for summer with stylish handbags that match every
+                    outfit.
+                  </p>
+                  <button>Shop now</button>
+                </div>
+                <div class="hero__img">
+                  <img src="images_namig/bag_hero.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="sliderbtns">
+              <div class="slider-dot active"></div>
+              <div class="slider-dot"></div>
+              <div class="slider-dot"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="services">
+        <div class="container">
+          <div class="services">
+            <div class="services__service">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="48"
+                height="48"
+                viewBox="0 0 48 48"
+                fill="none"
+              >
+                <g id="transport 1">
+                  <path
+                    id="Vector"
+                    d="M8 34H6C4.89543 34 4 33.1046 4 32V16C4 14.8954 4.89543 14 6 14H28C29.1046 14 30 14.8954 30 16V32C30 33.1046 29.1046 34 28 34H16"
+                    stroke="#007878"
+                    stroke-width="2"
+                    stroke-linecap="square"
+                  />
+                  <path
+                    id="Vector_2"
+                    d="M40 34H42C43.1046 34 44 33.1046 44 32V25.6351C44 25.2916 43.9115 24.9539 43.7432 24.6546L40.5735 19.0195C40.2192 18.3897 39.5528 18 38.8303 18H32C30.8954 18 30 18.8954 30 20V32C30 33.1046 30.8954 34 32 34V34"
+                    stroke="#007878"
+                    stroke-width="2"
+                    stroke-linecap="square"
+                  />
+                  <path
+                    id="Vector_3"
+                    d="M12 38C14.2091 38 16 36.2091 16 34C16 31.7909 14.2091 30 12 30C9.79086 30 8 31.7909 8 34C8 36.2091 9.79086 38 12 38Z"
+                    stroke="#007878"
+                    stroke-width="2"
+                    stroke-linecap="square"
+                  />
+                  <path
+                    id="Vector_4"
+                    d="M36 38C38.2091 38 40 36.2091 40 34C40 31.7909 38.2091 30 36 30C33.7909 30 32 31.7909 32 34C32 36.2091 33.7909 38 36 38Z"
+                    stroke="#007878"
+                    stroke-width="2"
+                    stroke-linecap="square"
+                  />
+                </g>
+              </svg>
+              <span>Guaranteed delivery</span>
+            </div>
+            <div class="services__service">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="48"
+                height="48"
+                viewBox="0 0 48 48"
+                fill="none"
+              >
+                <g id="entrance">
+                  <path
+                    id="Vector"
+                    d="M22 30L28 24L22 18"
+                    stroke="#007878"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    id="Vector_2"
+                    d="M9 24H26"
+                    stroke="#007878"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    id="Vector_3"
+                    d="M34 8C35.1046 8 36 8.89543 36 10V38C36 39.1046 35.1046 40 34 40H16C14.8954 40 14 39.1046 14 38V10C14 8.89543 14.8954 8 16 8H34Z"
+                    stroke="#007878"
+                    stroke-width="2"
+                    stroke-linecap="square"
+                  />
+                </g>
+              </svg>
+              <span>Do not come back</span>
+            </div>
+            <div class="services__service">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="48"
+                height="48"
+                viewBox="0 0 48 48"
+                fill="none"
+              >
+                <g id="lock-alt">
+                  <path
+                    id="Vector"
+                    d="M36 22H12C10.8954 22 10 22.8954 10 24V40C10 41.1046 10.8954 42 12 42H36C37.1046 42 38 41.1046 38 40V24C38 22.8954 37.1046 22 36 22Z"
+                    stroke="#007878"
+                    stroke-width="2"
+                    stroke-linecap="square"
+                  />
+                  <path
+                    id="Vector_2"
+                    d="M24 6C29.5229 6 34 10.4772 34 16V22H14V16C14 10.4772 18.4772 6 24 6Z"
+                    stroke="#007878"
+                    stroke-width="2"
+                    stroke-linecap="square"
+                  />
+                  <path
+                    id="Vector_3"
+                    d="M24 34C25.1046 34 26 33.1046 26 32C26 30.8954 25.1046 30 24 30C22.8954 30 22 30.8954 22 32C22 33.1046 22.8954 34 24 34Z"
+                    stroke="#007878"
+                    stroke-width="2"
+                    stroke-linecap="square"
+                  />
+                </g>
+              </svg>
+              <span>Safe and secure shopping</span>
+            </div>
+            <div class="services__service">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="48"
+                height="48"
+                viewBox="0 0 48 48"
+                fill="none"
+              >
+                <g id="credit-card" clip-path="url(#clip0_1_1303)">
+                  <path
+                    id="Vector"
+                    d="M40 10H8C5.79086 10 4 11.7909 4 14V34C4 36.2091 5.79086 38 8 38H40C42.2091 38 44 36.2091 44 34V14C44 11.7909 42.2091 10 40 10Z"
+                    stroke="#007878"
+                    stroke-width="2"
+                    stroke-linecap="square"
+                  />
+                  <path
+                    id="Vector_2"
+                    d="M4 28H44"
+                    stroke="#007878"
+                    stroke-width="2"
+                    stroke-linecap="square"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_1_1303">
+                    <rect width="48" height="48" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+              <span>Payment at the door or online</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="bag">
+        <div class="container">
+          <div class="bag">
+            <a href="#">
+              <div class="bag__model">
+                <p>Shoulder bags</p>
+                <img src="images_namig/shoulder-bag.png" alt="" />
+              </div>
+            </a>
+            <a href="#">
+              <div class="bag__model">
+                <p>Hand bag</p>
+                <img src="images_namig/hand-bag.png" alt="" />
+              </div>
+            </a>
+            <a href="#">
+              <div class="bag__model">
+                <p>Backpack</p>
+                <img src="images_namig/backpack.png" alt="" />
+              </div>
+            </a>
+            <a href="#">
+              <div class="bag__model">
+                <p>Evenings bags</p>
+                <img src="images_namig/evenings-bag.png" alt="" />
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section id="features">
+        <div class="container">
+          <div class="features__title">
+            <h2 class="title">Featured Products</h2>
+            <a href="#"> View all products > </a>
+          </div>
+          <div class="features">
+            <button class="arrow left arrow--left" data-target="features-cards">
+              <
+            </button>
+            <div class="features__cards" id="features-cards">
+              <div class="feature__card">
+                <a href="#">
+                  <div class="card--links">
+                    <div class="newBtn">
+                      <button>New</button>
+                    </div>
+                    <div class="wishlist">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="22"
+                        height="22"
+                        viewBox="0 0 22 22"
+                        fill="none"
+                      >
+                        <g id="favourite">
+                          <path
+                            id="Vector"
+                            d="M10.9997 19.25L9.67051 18.0631C4.94967 13.8639 1.83301 11.0944 1.83301 7.6955C1.83301 4.92602 4.05134 2.75 6.87467 2.75C8.46967 2.75 10.0005 3.47834 10.9997 4.62929C11.9988 3.47834 13.5297 2.75 15.1247 2.75C17.948 2.75 20.1663 4.92602 20.1663 7.6955C20.1663 11.0944 17.0497 13.8639 12.3288 18.0721L10.9997 19.25Z"
+                            stroke="#DF4244"
+                            stroke-width="2"
+                            stroke-linecap="square"
+                          />
+                        </g>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="card__img">
+                    <img src="images_namig/card__shoulder-bag.png" alt="" />
+                  </div>
+                  <div class="card__ratings">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="14"
+                      height="14"
+                      viewBox="0 0 14 14"
+                      fill="none"
+                    >
+                      <g id="star" clip-path="url(#clip0_1_1402)">
+                        <path
+                          id="Vector"
+                          d="M7.00033 9.68827L4.47666 11.0833L4.95866 8.12857L2.91699 6.03604L5.73871 5.60494L7.00033 2.91663L8.26194 5.60494L11.0837 6.03604L9.04199 8.12857L9.52399 11.0833L7.00033 9.68827Z"
+                          fill="#FFDD45"
+                          stroke="#FFDD45"
+                          stroke-width="3"
+                          stroke-linecap="square"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_1_1402">
+                          <rect width="14" height="14" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="14"
+                      height="14"
+                      viewBox="0 0 14 14"
+                      fill="none"
+                    >
+                      <g id="star" clip-path="url(#clip0_1_1402)">
+                        <path
+                          id="Vector"
+                          d="M7.00033 9.68827L4.47666 11.0833L4.95866 8.12857L2.91699 6.03604L5.73871 5.60494L7.00033 2.91663L8.26194 5.60494L11.0837 6.03604L9.04199 8.12857L9.52399 11.0833L7.00033 9.68827Z"
+                          fill="#FFDD45"
+                          stroke="#FFDD45"
+                          stroke-width="3"
+                          stroke-linecap="square"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_1_1402">
+                          <rect width="14" height="14" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="14"
+                      height="14"
+                      viewBox="0 0 14 14"
+                      fill="none"
+                    >
+                      <g id="star" clip-path="url(#clip0_1_1402)">
+                        <path
+                          id="Vector"
+                          d="M7.00033 9.68827L4.47666 11.0833L4.95866 8.12857L2.91699 6.03604L5.73871 5.60494L7.00033 2.91663L8.26194 5.60494L11.0837 6.03604L9.04199 8.12857L9.52399 11.0833L7.00033 9.68827Z"
+                          fill="#FFDD45"
+                          stroke="#FFDD45"
+                          stroke-width="3"
+                          stroke-linecap="square"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_1_1402">
+                          <rect width="14" height="14" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="14"
+                      height="14"
+                      viewBox="0 0 14 14"
+                      fill="none"
+                    >
+                      <g id="star" clip-path="url(#clip0_1_1402)">
+                        <path
+                          id="Vector"
+                          d="M7.00033 9.68827L4.47666 11.0833L4.95866 8.12857L2.91699 6.03604L5.73871 5.60494L7.00033 2.91663L8.26194 5.60494L11.0837 6.03604L9.04199 8.12857L9.52399 11.0833L7.00033 9.68827Z"
+                          fill="#FFDD45"
+                          stroke="#FFDD45"
+                          stroke-width="3"
+                          stroke-linecap="square"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_1_1402">
+                          <rect width="14" height="14" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="14"
+                      height="14"
+                      viewBox="0 0 14 14"
+                      fill="none"
+                    >
+                      <g id="star" clip-path="url(#clip0_1_1402)">
+                        <path
+                          id="Vector"
+                          d="M7.00033 9.68827L4.47666 11.0833L4.95866 8.12857L2.91699 6.03604L5.73871 5.60494L7.00033 2.91663L8.26194 5.60494L11.0837 6.03604L9.04199 8.12857L9.52399 11.0833L7.00033 9.68827Z"
+                          fill="#FFDD45"
+                          stroke="#FFDD45"
+                          stroke-width="3"
+                          stroke-linecap="square"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_1_1402">
+                          <rect width="14" height="14" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </div>
+                  <div class="card__text">
+                    <h3>Hotel Magique Love and Magique Tote Shoulder Bag</h3>
+                    <p>$47</p>
+                  </div>
+                  <button class="addBtn">Add to card</button>
+                </a>
+              </div>
+              <div class="feature__card">
+                <a href="#">
+                  <div class="card--links">
+                    <div class="newBtn">
+                      <button>New</button>
+                    </div>
+                    <div class="wishlist">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="22"
+                        height="22"
+                        viewBox="0 0 22 22"
+                        fill="none"
+                      >
+                        <g id="favourite">
+                          <path
+                            id="Vector"
+                            d="M10.9997 19.25L9.67051 18.0631C4.94967 13.8639 1.83301 11.0944 1.83301 7.6955C1.83301 4.92602 4.05134 2.75 6.87467 2.75C8.46967 2.75 10.0005 3.47834 10.9997 4.62929C11.9988 3.47834 13.5297 2.75 15.1247 2.75C17.948 2.75 20.1663 4.92602 20.1663 7.6955C20.1663 11.0944 17.0497 13.8639 12.3288 18.0721L10.9997 19.25Z"
+                            stroke="#DF4244"
+                            stroke-width="2"
+                            stroke-linecap="square"
+                          />
+                        </g>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="card__img">
+                    <img src="images_namig/card__shoulder-bag.png" alt="" />
+                  </div>
+                  <div class="card__ratings">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="14"
+                      height="14"
+                      viewBox="0 0 14 14"
+                      fill="none"
+                    >
+                      <g id="star" clip-path="url(#clip0_1_1402)">
+                        <path
+                          id="Vector"
+                          d="M7.00033 9.68827L4.47666 11.0833L4.95866 8.12857L2.91699 6.03604L5.73871 5.60494L7.00033 2.91663L8.26194 5.60494L11.0837 6.03604L9.04199 8.12857L9.52399 11.0833L7.00033 9.68827Z"
+                          fill="#FFDD45"
+                          stroke="#FFDD45"
+                          stroke-width="3"
+                          stroke-linecap="square"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_1_1402">
+                          <rect width="14" height="14" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="14"
+                      height="14"
+                      viewBox="0 0 14 14"
+                      fill="none"
+                    >
+                      <g id="star" clip-path="url(#clip0_1_1402)">
+                        <path
+                          id="Vector"
+                          d="M7.00033 9.68827L4.47666 11.0833L4.95866 8.12857L2.91699 6.03604L5.73871 5.60494L7.00033 2.91663L8.26194 5.60494L11.0837 6.03604L9.04199 8.12857L9.52399 11.0833L7.00033 9.68827Z"
+                          fill="#FFDD45"
+                          stroke="#FFDD45"
+                          stroke-width="3"
+                          stroke-linecap="square"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_1_1402">
+                          <rect width="14" height="14" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="14"
+                      height="14"
+                      viewBox="0 0 14 14"
+                      fill="none"
+                    >
+                      <g id="star" clip-path="url(#clip0_1_1402)">
+                        <path
+                          id="Vector"
+                          d="M7.00033 9.68827L4.47666 11.0833L4.95866 8.12857L2.91699 6.03604L5.73871 5.60494L7.00033 2.91663L8.26194 5.60494L11.0837 6.03604L9.04199 8.12857L9.52399 11.0833L7.00033 9.68827Z"
+                          fill="#FFDD45"
+                          stroke="#FFDD45"
+                          stroke-width="3"
+                          stroke-linecap="square"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_1_1402">
+                          <rect width="14" height="14" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="14"
+                      height="14"
+                      viewBox="0 0 14 14"
+                      fill="none"
+                    >
+                      <g id="star" clip-path="url(#clip0_1_1402)">
+                        <path
+                          id="Vector"
+                          d="M7.00033 9.68827L4.47666 11.0833L4.95866 8.12857L2.91699 6.03604L5.73871 5.60494L7.00033 2.91663L8.26194 5.60494L11.0837 6.03604L9.04199 8.12857L9.52399 11.0833L7.00033 9.68827Z"
+                          fill="#FFDD45"
+                          stroke="#FFDD45"
+                          stroke-width="3"
+                          stroke-linecap="square"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_1_1402">
+                          <rect width="14" height="14" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="14"
+                      height="14"
+                      viewBox="0 0 14 14"
+                      fill="none"
+                    >
+                      <g id="star" clip-path="url(#clip0_1_1402)">
+                        <path
+                          id="Vector"
+                          d="M7.00033 9.68827L4.47666 11.0833L4.95866 8.12857L2.91699 6.03604L5.73871 5.60494L7.00033 2.91663L8.26194 5.60494L11.0837 6.03604L9.04199 8.12857L9.52399 11.0833L7.00033 9.68827Z"
+                          fill="#FFDD45"
+                          stroke="#FFDD45"
+                          stroke-width="3"
+                          stroke-linecap="square"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_1_1402">
+                          <rect width="14" height="14" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </div>
+                  <div class="card__text">
+                    <h3>Hotel Magique Love and Magique Tote Shoulder Bag</h3>
+                    <p>$47</p>
+                  </div>
+                  <button class="addBtn">Add to card</button>
+                </a>
+              </div>
+              <div class="feature__card">
+                <a href="#">
+                  <div class="card--links">
+                    <div class="newBtn">
+                      <button>New</button>
+                    </div>
+                    <div class="wishlist">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="22"
+                        height="22"
+                        viewBox="0 0 22 22"
+                        fill="none"
+                      >
+                        <g id="favourite">
+                          <path
+                            id="Vector"
+                            d="M10.9997 19.25L9.67051 18.0631C4.94967 13.8639 1.83301 11.0944 1.83301 7.6955C1.83301 4.92602 4.05134 2.75 6.87467 2.75C8.46967 2.75 10.0005 3.47834 10.9997 4.62929C11.9988 3.47834 13.5297 2.75 15.1247 2.75C17.948 2.75 20.1663 4.92602 20.1663 7.6955C20.1663 11.0944 17.0497 13.8639 12.3288 18.0721L10.9997 19.25Z"
+                            stroke="#DF4244"
+                            stroke-width="2"
+                            stroke-linecap="square"
+                          />
+                        </g>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="card__img">
+                    <img src="images_namig/card__shoulder-bag.png" alt="" />
+                  </div>
+                  <div class="card__ratings">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="14"
+                      height="14"
+                      viewBox="0 0 14 14"
+                      fill="none"
+                    >
+                      <g id="star" clip-path="url(#clip0_1_1402)">
+                        <path
+                          id="Vector"
+                          d="M7.00033 9.68827L4.47666 11.0833L4.95866 8.12857L2.91699 6.03604L5.73871 5.60494L7.00033 2.91663L8.26194 5.60494L11.0837 6.03604L9.04199 8.12857L9.52399 11.0833L7.00033 9.68827Z"
+                          fill="#FFDD45"
+                          stroke="#FFDD45"
+                          stroke-width="3"
+                          stroke-linecap="square"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_1_1402">
+                          <rect width="14" height="14" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="14"
+                      height="14"
+                      viewBox="0 0 14 14"
+                      fill="none"
+                    >
+                      <g id="star" clip-path="url(#clip0_1_1402)">
+                        <path
+                          id="Vector"
+                          d="M7.00033 9.68827L4.47666 11.0833L4.95866 8.12857L2.91699 6.03604L5.73871 5.60494L7.00033 2.91663L8.26194 5.60494L11.0837 6.03604L9.04199 8.12857L9.52399 11.0833L7.00033 9.68827Z"
+                          fill="#FFDD45"
+                          stroke="#FFDD45"
+                          stroke-width="3"
+                          stroke-linecap="square"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_1_1402">
+                          <rect width="14" height="14" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="14"
+                      height="14"
+                      viewBox="0 0 14 14"
+                      fill="none"
+                    >
+                      <g id="star" clip-path="url(#clip0_1_1402)">
+                        <path
+                          id="Vector"
+                          d="M7.00033 9.68827L4.47666 11.0833L4.95866 8.12857L2.91699 6.03604L5.73871 5.60494L7.00033 2.91663L8.26194 5.60494L11.0837 6.03604L9.04199 8.12857L9.52399 11.0833L7.00033 9.68827Z"
+                          fill="#FFDD45"
+                          stroke="#FFDD45"
+                          stroke-width="3"
+                          stroke-linecap="square"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_1_1402">
+                          <rect width="14" height="14" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="14"
+                      height="14"
+                      viewBox="0 0 14 14"
+                      fill="none"
+                    >
+                      <g id="star" clip-path="url(#clip0_1_1402)">
+                        <path
+                          id="Vector"
+                          d="M7.00033 9.68827L4.47666 11.0833L4.95866 8.12857L2.91699 6.03604L5.73871 5.60494L7.00033 2.91663L8.26194 5.60494L11.0837 6.03604L9.04199 8.12857L9.52399 11.0833L7.00033 9.68827Z"
+                          fill="#FFDD45"
+                          stroke="#FFDD45"
+                          stroke-width="3"
+                          stroke-linecap="square"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_1_1402">
+                          <rect width="14" height="14" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="14"
+                      height="14"
+                      viewBox="0 0 14 14"
+                      fill="none"
+                    >
+                      <g id="star" clip-path="url(#clip0_1_1402)">
+                        <path
+                          id="Vector"
+                          d="M7.00033 9.68827L4.47666 11.0833L4.95866 8.12857L2.91699 6.03604L5.73871 5.60494L7.00033 2.91663L8.26194 5.60494L11.0837 6.03604L9.04199 8.12857L9.52399 11.0833L7.00033 9.68827Z"
+                          fill="#FFDD45"
+                          stroke="#FFDD45"
+                          stroke-width="3"
+                          stroke-linecap="square"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_1_1402">
+                          <rect width="14" height="14" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </div>
+                  <div class="card__text">
+                    <h3>Hotel Magique Love and Magique Tote Shoulder Bag</h3>
+                    <p>$47</p>
+                  </div>
+                  <button class="addBtn">Add to card</button>
+                </a>
+              </div>
+              <div class="feature__card">
+                <a href="#">
+                  <div class="card--links">
+                    <div class="newBtn">
+                      <button>New</button>
+                    </div>
+                    <div class="wishlist">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="22"
+                        height="22"
+                        viewBox="0 0 22 22"
+                        fill="none"
+                      >
+                        <g id="favourite">
+                          <path
+                            id="Vector"
+                            d="M10.9997 19.25L9.67051 18.0631C4.94967 13.8639 1.83301 11.0944 1.83301 7.6955C1.83301 4.92602 4.05134 2.75 6.87467 2.75C8.46967 2.75 10.0005 3.47834 10.9997 4.62929C11.9988 3.47834 13.5297 2.75 15.1247 2.75C17.948 2.75 20.1663 4.92602 20.1663 7.6955C20.1663 11.0944 17.0497 13.8639 12.3288 18.0721L10.9997 19.25Z"
+                            stroke="#DF4244"
+                            stroke-width="2"
+                            stroke-linecap="square"
+                          />
+                        </g>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="card__img">
+                    <img src="images_namig/card__shoulder-bag.png" alt="" />
+                  </div>
+                  <div class="card__ratings">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="14"
+                      height="14"
+                      viewBox="0 0 14 14"
+                      fill="none"
+                    >
+                      <g id="star" clip-path="url(#clip0_1_1402)">
+                        <path
+                          id="Vector"
+                          d="M7.00033 9.68827L4.47666 11.0833L4.95866 8.12857L2.91699 6.03604L5.73871 5.60494L7.00033 2.91663L8.26194 5.60494L11.0837 6.03604L9.04199 8.12857L9.52399 11.0833L7.00033 9.68827Z"
+                          fill="#FFDD45"
+                          stroke="#FFDD45"
+                          stroke-width="3"
+                          stroke-linecap="square"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_1_1402">
+                          <rect width="14" height="14" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="14"
+                      height="14"
+                      viewBox="0 0 14 14"
+                      fill="none"
+                    >
+                      <g id="star" clip-path="url(#clip0_1_1402)">
+                        <path
+                          id="Vector"
+                          d="M7.00033 9.68827L4.47666 11.0833L4.95866 8.12857L2.91699 6.03604L5.73871 5.60494L7.00033 2.91663L8.26194 5.60494L11.0837 6.03604L9.04199 8.12857L9.52399 11.0833L7.00033 9.68827Z"
+                          fill="#FFDD45"
+                          stroke="#FFDD45"
+                          stroke-width="3"
+                          stroke-linecap="square"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_1_1402">
+                          <rect width="14" height="14" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="14"
+                      height="14"
+                      viewBox="0 0 14 14"
+                      fill="none"
+                    >
+                      <g id="star" clip-path="url(#clip0_1_1402)">
+                        <path
+                          id="Vector"
+                          d="M7.00033 9.68827L4.47666 11.0833L4.95866 8.12857L2.91699 6.03604L5.73871 5.60494L7.00033 2.91663L8.26194 5.60494L11.0837 6.03604L9.04199 8.12857L9.52399 11.0833L7.00033 9.68827Z"
+                          fill="#FFDD45"
+                          stroke="#FFDD45"
+                          stroke-width="3"
+                          stroke-linecap="square"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_1_1402">
+                          <rect width="14" height="14" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="14"
+                      height="14"
+                      viewBox="0 0 14 14"
+                      fill="none"
+                    >
+                      <g id="star" clip-path="url(#clip0_1_1402)">
+                        <path
+                          id="Vector"
+                          d="M7.00033 9.68827L4.47666 11.0833L4.95866 8.12857L2.91699 6.03604L5.73871 5.60494L7.00033 2.91663L8.26194 5.60494L11.0837 6.03604L9.04199 8.12857L9.52399 11.0833L7.00033 9.68827Z"
+                          fill="#FFDD45"
+                          stroke="#FFDD45"
+                          stroke-width="3"
+                          stroke-linecap="square"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_1_1402">
+                          <rect width="14" height="14" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="14"
+                      height="14"
+                      viewBox="0 0 14 14"
+                      fill="none"
+                    >
+                      <g id="star" clip-path="url(#clip0_1_1402)">
+                        <path
+                          id="Vector"
+                          d="M7.00033 9.68827L4.47666 11.0833L4.95866 8.12857L2.91699 6.03604L5.73871 5.60494L7.00033 2.91663L8.26194 5.60494L11.0837 6.03604L9.04199 8.12857L9.52399 11.0833L7.00033 9.68827Z"
+                          fill="#FFDD45"
+                          stroke="#FFDD45"
+                          stroke-width="3"
+                          stroke-linecap="square"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_1_1402">
+                          <rect width="14" height="14" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </div>
+                  <div class="card__text">
+                    <h3>Hotel Magique Love and Magique Tote Shoulder Bag</h3>
+                    <p>$47</p>
+                  </div>
+                  <button class="addBtn">Add to card</button>
+                </a>
+              </div>
+              <div class="feature__card">
+                <a href="#">
+                  <div class="card--links">
+                    <div class="newBtn">
+                      <button>New</button>
+                    </div>
+                    <div class="wishlist">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="22"
+                        height="22"
+                        viewBox="0 0 22 22"
+                        fill="none"
+                      >
+                        <g id="favourite">
+                          <path
+                            id="Vector"
+                            d="M10.9997 19.25L9.67051 18.0631C4.94967 13.8639 1.83301 11.0944 1.83301 7.6955C1.83301 4.92602 4.05134 2.75 6.87467 2.75C8.46967 2.75 10.0005 3.47834 10.9997 4.62929C11.9988 3.47834 13.5297 2.75 15.1247 2.75C17.948 2.75 20.1663 4.92602 20.1663 7.6955C20.1663 11.0944 17.0497 13.8639 12.3288 18.0721L10.9997 19.25Z"
+                            stroke="#DF4244"
+                            stroke-width="2"
+                            stroke-linecap="square"
+                          />
+                        </g>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="card__img">
+                    <img src="images_namig/card__shoulder-bag.png" alt="" />
+                  </div>
+                  <div class="card__ratings">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="14"
+                      height="14"
+                      viewBox="0 0 14 14"
+                      fill="none"
+                    >
+                      <g id="star" clip-path="url(#clip0_1_1402)">
+                        <path
+                          id="Vector"
+                          d="M7.00033 9.68827L4.47666 11.0833L4.95866 8.12857L2.91699 6.03604L5.73871 5.60494L7.00033 2.91663L8.26194 5.60494L11.0837 6.03604L9.04199 8.12857L9.52399 11.0833L7.00033 9.68827Z"
+                          fill="#FFDD45"
+                          stroke="#FFDD45"
+                          stroke-width="3"
+                          stroke-linecap="square"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_1_1402">
+                          <rect width="14" height="14" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="14"
+                      height="14"
+                      viewBox="0 0 14 14"
+                      fill="none"
+                    >
+                      <g id="star" clip-path="url(#clip0_1_1402)">
+                        <path
+                          id="Vector"
+                          d="M7.00033 9.68827L4.47666 11.0833L4.95866 8.12857L2.91699 6.03604L5.73871 5.60494L7.00033 2.91663L8.26194 5.60494L11.0837 6.03604L9.04199 8.12857L9.52399 11.0833L7.00033 9.68827Z"
+                          fill="#FFDD45"
+                          stroke="#FFDD45"
+                          stroke-width="3"
+                          stroke-linecap="square"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_1_1402">
+                          <rect width="14" height="14" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="14"
+                      height="14"
+                      viewBox="0 0 14 14"
+                      fill="none"
+                    >
+                      <g id="star" clip-path="url(#clip0_1_1402)">
+                        <path
+                          id="Vector"
+                          d="M7.00033 9.68827L4.47666 11.0833L4.95866 8.12857L2.91699 6.03604L5.73871 5.60494L7.00033 2.91663L8.26194 5.60494L11.0837 6.03604L9.04199 8.12857L9.52399 11.0833L7.00033 9.68827Z"
+                          fill="#FFDD45"
+                          stroke="#FFDD45"
+                          stroke-width="3"
+                          stroke-linecap="square"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_1_1402">
+                          <rect width="14" height="14" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="14"
+                      height="14"
+                      viewBox="0 0 14 14"
+                      fill="none"
+                    >
+                      <g id="star" clip-path="url(#clip0_1_1402)">
+                        <path
+                          id="Vector"
+                          d="M7.00033 9.68827L4.47666 11.0833L4.95866 8.12857L2.91699 6.03604L5.73871 5.60494L7.00033 2.91663L8.26194 5.60494L11.0837 6.03604L9.04199 8.12857L9.52399 11.0833L7.00033 9.68827Z"
+                          fill="#FFDD45"
+                          stroke="#FFDD45"
+                          stroke-width="3"
+                          stroke-linecap="square"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_1_1402">
+                          <rect width="14" height="14" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="14"
+                      height="14"
+                      viewBox="0 0 14 14"
+                      fill="none"
+                    >
+                      <g id="star" clip-path="url(#clip0_1_1402)">
+                        <path
+                          id="Vector"
+                          d="M7.00033 9.68827L4.47666 11.0833L4.95866 8.12857L2.91699 6.03604L5.73871 5.60494L7.00033 2.91663L8.26194 5.60494L11.0837 6.03604L9.04199 8.12857L9.52399 11.0833L7.00033 9.68827Z"
+                          fill="#FFDD45"
+                          stroke="#FFDD45"
+                          stroke-width="3"
+                          stroke-linecap="square"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_1_1402">
+                          <rect width="14" height="14" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </div>
+                  <div class="card__text">
+                    <h3>Hotel Magique Love and Magique Tote Shoulder Bag</h3>
+                    <p>$47</p>
+                  </div>
+                  <button class="addBtn">Add to card</button>
+                </a>
+              </div>
+              <div class="feature__card">
+                <a href="#">
+                  <div class="card--links">
+                    <div class="newBtn">
+                      <button>New</button>
+                    </div>
+                    <div class="wishlist">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="22"
+                        height="22"
+                        viewBox="0 0 22 22"
+                        fill="none"
+                      >
+                        <g id="favourite">
+                          <path
+                            id="Vector"
+                            d="M10.9997 19.25L9.67051 18.0631C4.94967 13.8639 1.83301 11.0944 1.83301 7.6955C1.83301 4.92602 4.05134 2.75 6.87467 2.75C8.46967 2.75 10.0005 3.47834 10.9997 4.62929C11.9988 3.47834 13.5297 2.75 15.1247 2.75C17.948 2.75 20.1663 4.92602 20.1663 7.6955C20.1663 11.0944 17.0497 13.8639 12.3288 18.0721L10.9997 19.25Z"
+                            stroke="#DF4244"
+                            stroke-width="2"
+                            stroke-linecap="square"
+                          />
+                        </g>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="card__img">
+                    <img src="images_namig/card__shoulder-bag.png" alt="" />
+                  </div>
+                  <div class="card__ratings">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="14"
+                      height="14"
+                      viewBox="0 0 14 14"
+                      fill="none"
+                    >
+                      <g id="star" clip-path="url(#clip0_1_1402)">
+                        <path
+                          id="Vector"
+                          d="M7.00033 9.68827L4.47666 11.0833L4.95866 8.12857L2.91699 6.03604L5.73871 5.60494L7.00033 2.91663L8.26194 5.60494L11.0837 6.03604L9.04199 8.12857L9.52399 11.0833L7.00033 9.68827Z"
+                          fill="#FFDD45"
+                          stroke="#FFDD45"
+                          stroke-width="3"
+                          stroke-linecap="square"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_1_1402">
+                          <rect width="14" height="14" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="14"
+                      height="14"
+                      viewBox="0 0 14 14"
+                      fill="none"
+                    >
+                      <g id="star" clip-path="url(#clip0_1_1402)">
+                        <path
+                          id="Vector"
+                          d="M7.00033 9.68827L4.47666 11.0833L4.95866 8.12857L2.91699 6.03604L5.73871 5.60494L7.00033 2.91663L8.26194 5.60494L11.0837 6.03604L9.04199 8.12857L9.52399 11.0833L7.00033 9.68827Z"
+                          fill="#FFDD45"
+                          stroke="#FFDD45"
+                          stroke-width="3"
+                          stroke-linecap="square"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_1_1402">
+                          <rect width="14" height="14" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="14"
+                      height="14"
+                      viewBox="0 0 14 14"
+                      fill="none"
+                    >
+                      <g id="star" clip-path="url(#clip0_1_1402)">
+                        <path
+                          id="Vector"
+                          d="M7.00033 9.68827L4.47666 11.0833L4.95866 8.12857L2.91699 6.03604L5.73871 5.60494L7.00033 2.91663L8.26194 5.60494L11.0837 6.03604L9.04199 8.12857L9.52399 11.0833L7.00033 9.68827Z"
+                          fill="#FFDD45"
+                          stroke="#FFDD45"
+                          stroke-width="3"
+                          stroke-linecap="square"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_1_1402">
+                          <rect width="14" height="14" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="14"
+                      height="14"
+                      viewBox="0 0 14 14"
+                      fill="none"
+                    >
+                      <g id="star" clip-path="url(#clip0_1_1402)">
+                        <path
+                          id="Vector"
+                          d="M7.00033 9.68827L4.47666 11.0833L4.95866 8.12857L2.91699 6.03604L5.73871 5.60494L7.00033 2.91663L8.26194 5.60494L11.0837 6.03604L9.04199 8.12857L9.52399 11.0833L7.00033 9.68827Z"
+                          fill="#FFDD45"
+                          stroke="#FFDD45"
+                          stroke-width="3"
+                          stroke-linecap="square"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_1_1402">
+                          <rect width="14" height="14" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="14"
+                      height="14"
+                      viewBox="0 0 14 14"
+                      fill="none"
+                    >
+                      <g id="star" clip-path="url(#clip0_1_1402)">
+                        <path
+                          id="Vector"
+                          d="M7.00033 9.68827L4.47666 11.0833L4.95866 8.12857L2.91699 6.03604L5.73871 5.60494L7.00033 2.91663L8.26194 5.60494L11.0837 6.03604L9.04199 8.12857L9.52399 11.0833L7.00033 9.68827Z"
+                          fill="#FFDD45"
+                          stroke="#FFDD45"
+                          stroke-width="3"
+                          stroke-linecap="square"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_1_1402">
+                          <rect width="14" height="14" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </div>
+                  <div class="card__text">
+                    <h3>Hotel Magique Love and Magique Tote Shoulder Bag</h3>
+                    <p>$47</p>
+                  </div>
+                  <button class="addBtn">Add to card</button>
+                </a>
+              </div>
+              <div class="feature__card">
+                <a href="#">
+                  <div class="card--links">
+                    <div class="newBtn">
+                      <button>New</button>
+                    </div>
+                    <div class="wishlist">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="22"
+                        height="22"
+                        viewBox="0 0 22 22"
+                        fill="none"
+                      >
+                        <g id="favourite">
+                          <path
+                            id="Vector"
+                            d="M10.9997 19.25L9.67051 18.0631C4.94967 13.8639 1.83301 11.0944 1.83301 7.6955C1.83301 4.92602 4.05134 2.75 6.87467 2.75C8.46967 2.75 10.0005 3.47834 10.9997 4.62929C11.9988 3.47834 13.5297 2.75 15.1247 2.75C17.948 2.75 20.1663 4.92602 20.1663 7.6955C20.1663 11.0944 17.0497 13.8639 12.3288 18.0721L10.9997 19.25Z"
+                            stroke="#DF4244"
+                            stroke-width="2"
+                            stroke-linecap="square"
+                          />
+                        </g>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="card__img">
+                    <img src="images_namig/card__shoulder-bag.png" alt="" />
+                  </div>
+                  <div class="card__ratings">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="14"
+                      height="14"
+                      viewBox="0 0 14 14"
+                      fill="none"
+                    >
+                      <g id="star" clip-path="url(#clip0_1_1402)">
+                        <path
+                          id="Vector"
+                          d="M7.00033 9.68827L4.47666 11.0833L4.95866 8.12857L2.91699 6.03604L5.73871 5.60494L7.00033 2.91663L8.26194 5.60494L11.0837 6.03604L9.04199 8.12857L9.52399 11.0833L7.00033 9.68827Z"
+                          fill="#FFDD45"
+                          stroke="#FFDD45"
+                          stroke-width="3"
+                          stroke-linecap="square"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_1_1402">
+                          <rect width="14" height="14" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="14"
+                      height="14"
+                      viewBox="0 0 14 14"
+                      fill="none"
+                    >
+                      <g id="star" clip-path="url(#clip0_1_1402)">
+                        <path
+                          id="Vector"
+                          d="M7.00033 9.68827L4.47666 11.0833L4.95866 8.12857L2.91699 6.03604L5.73871 5.60494L7.00033 2.91663L8.26194 5.60494L11.0837 6.03604L9.04199 8.12857L9.52399 11.0833L7.00033 9.68827Z"
+                          fill="#FFDD45"
+                          stroke="#FFDD45"
+                          stroke-width="3"
+                          stroke-linecap="square"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_1_1402">
+                          <rect width="14" height="14" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="14"
+                      height="14"
+                      viewBox="0 0 14 14"
+                      fill="none"
+                    >
+                      <g id="star" clip-path="url(#clip0_1_1402)">
+                        <path
+                          id="Vector"
+                          d="M7.00033 9.68827L4.47666 11.0833L4.95866 8.12857L2.91699 6.03604L5.73871 5.60494L7.00033 2.91663L8.26194 5.60494L11.0837 6.03604L9.04199 8.12857L9.52399 11.0833L7.00033 9.68827Z"
+                          fill="#FFDD45"
+                          stroke="#FFDD45"
+                          stroke-width="3"
+                          stroke-linecap="square"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_1_1402">
+                          <rect width="14" height="14" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="14"
+                      height="14"
+                      viewBox="0 0 14 14"
+                      fill="none"
+                    >
+                      <g id="star" clip-path="url(#clip0_1_1402)">
+                        <path
+                          id="Vector"
+                          d="M7.00033 9.68827L4.47666 11.0833L4.95866 8.12857L2.91699 6.03604L5.73871 5.60494L7.00033 2.91663L8.26194 5.60494L11.0837 6.03604L9.04199 8.12857L9.52399 11.0833L7.00033 9.68827Z"
+                          fill="#FFDD45"
+                          stroke="#FFDD45"
+                          stroke-width="3"
+                          stroke-linecap="square"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_1_1402">
+                          <rect width="14" height="14" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="14"
+                      height="14"
+                      viewBox="0 0 14 14"
+                      fill="none"
+                    >
+                      <g id="star" clip-path="url(#clip0_1_1402)">
+                        <path
+                          id="Vector"
+                          d="M7.00033 9.68827L4.47666 11.0833L4.95866 8.12857L2.91699 6.03604L5.73871 5.60494L7.00033 2.91663L8.26194 5.60494L11.0837 6.03604L9.04199 8.12857L9.52399 11.0833L7.00033 9.68827Z"
+                          fill="#FFDD45"
+                          stroke="#FFDD45"
+                          stroke-width="3"
+                          stroke-linecap="square"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_1_1402">
+                          <rect width="14" height="14" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </div>
+                  <div class="card__text">
+                    <h3>Hotel Magique Love and Magique Tote Shoulder Bag</h3>
+                    <p>$47</p>
+                  </div>
+                  <button class="addBtn">Add to card</button>
+                </a>
+              </div>
+              <div class="feature__card">
+                <a href="#">
+                  <div class="card--links">
+                    <div class="newBtn">
+                      <button>New</button>
+                    </div>
+                    <div class="wishlist">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="22"
+                        height="22"
+                        viewBox="0 0 22 22"
+                        fill="none"
+                      >
+                        <g id="favourite">
+                          <path
+                            id="Vector"
+                            d="M10.9997 19.25L9.67051 18.0631C4.94967 13.8639 1.83301 11.0944 1.83301 7.6955C1.83301 4.92602 4.05134 2.75 6.87467 2.75C8.46967 2.75 10.0005 3.47834 10.9997 4.62929C11.9988 3.47834 13.5297 2.75 15.1247 2.75C17.948 2.75 20.1663 4.92602 20.1663 7.6955C20.1663 11.0944 17.0497 13.8639 12.3288 18.0721L10.9997 19.25Z"
+                            stroke="#DF4244"
+                            stroke-width="2"
+                            stroke-linecap="square"
+                          />
+                        </g>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="card__img">
+                    <img src="images_namig/card__shoulder-bag.png" alt="" />
+                  </div>
+                  <div class="card__ratings">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="14"
+                      height="14"
+                      viewBox="0 0 14 14"
+                      fill="none"
+                    >
+                      <g id="star" clip-path="url(#clip0_1_1402)">
+                        <path
+                          id="Vector"
+                          d="M7.00033 9.68827L4.47666 11.0833L4.95866 8.12857L2.91699 6.03604L5.73871 5.60494L7.00033 2.91663L8.26194 5.60494L11.0837 6.03604L9.04199 8.12857L9.52399 11.0833L7.00033 9.68827Z"
+                          fill="#FFDD45"
+                          stroke="#FFDD45"
+                          stroke-width="3"
+                          stroke-linecap="square"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_1_1402">
+                          <rect width="14" height="14" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="14"
+                      height="14"
+                      viewBox="0 0 14 14"
+                      fill="none"
+                    >
+                      <g id="star" clip-path="url(#clip0_1_1402)">
+                        <path
+                          id="Vector"
+                          d="M7.00033 9.68827L4.47666 11.0833L4.95866 8.12857L2.91699 6.03604L5.73871 5.60494L7.00033 2.91663L8.26194 5.60494L11.0837 6.03604L9.04199 8.12857L9.52399 11.0833L7.00033 9.68827Z"
+                          fill="#FFDD45"
+                          stroke="#FFDD45"
+                          stroke-width="3"
+                          stroke-linecap="square"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_1_1402">
+                          <rect width="14" height="14" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="14"
+                      height="14"
+                      viewBox="0 0 14 14"
+                      fill="none"
+                    >
+                      <g id="star" clip-path="url(#clip0_1_1402)">
+                        <path
+                          id="Vector"
+                          d="M7.00033 9.68827L4.47666 11.0833L4.95866 8.12857L2.91699 6.03604L5.73871 5.60494L7.00033 2.91663L8.26194 5.60494L11.0837 6.03604L9.04199 8.12857L9.52399 11.0833L7.00033 9.68827Z"
+                          fill="#FFDD45"
+                          stroke="#FFDD45"
+                          stroke-width="3"
+                          stroke-linecap="square"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_1_1402">
+                          <rect width="14" height="14" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="14"
+                      height="14"
+                      viewBox="0 0 14 14"
+                      fill="none"
+                    >
+                      <g id="star" clip-path="url(#clip0_1_1402)">
+                        <path
+                          id="Vector"
+                          d="M7.00033 9.68827L4.47666 11.0833L4.95866 8.12857L2.91699 6.03604L5.73871 5.60494L7.00033 2.91663L8.26194 5.60494L11.0837 6.03604L9.04199 8.12857L9.52399 11.0833L7.00033 9.68827Z"
+                          fill="#FFDD45"
+                          stroke="#FFDD45"
+                          stroke-width="3"
+                          stroke-linecap="square"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_1_1402">
+                          <rect width="14" height="14" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="14"
+                      height="14"
+                      viewBox="0 0 14 14"
+                      fill="none"
+                    >
+                      <g id="star" clip-path="url(#clip0_1_1402)">
+                        <path
+                          id="Vector"
+                          d="M7.00033 9.68827L4.47666 11.0833L4.95866 8.12857L2.91699 6.03604L5.73871 5.60494L7.00033 2.91663L8.26194 5.60494L11.0837 6.03604L9.04199 8.12857L9.52399 11.0833L7.00033 9.68827Z"
+                          fill="#FFDD45"
+                          stroke="#FFDD45"
+                          stroke-width="3"
+                          stroke-linecap="square"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_1_1402">
+                          <rect width="14" height="14" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </div>
+                  <div class="card__text">
+                    <h3>Hotel Magique Love and Magique Tote Shoulder Bag</h3>
+                    <p>$47</p>
+                  </div>
+                  <button class="addBtn">Add to card</button>
+                </a>
+              </div>
+            </div>
+            <button
+              class="arrow right arrow--right"
+              data-target="features-cards"
+            >
+              >
+            </button>
+          </div>
+        </div>
+      </section>
+      <section
+        class="scroll-section"
+        style="background-color: #fff7f7; padding: 100px 0"
+      >
+        <div class="container">
+          <h2 class="title">Bestseller</h2>
+          <div class="scroll-wrapper">
+            <button class="arrow left" data-target="bestseller">
+              &#10094;
+            </button>
+
+            <div class="scroll-container" id="bestseller">
+              <div class="product-card">
+                <div class="badge">20 sold</div>
+                <img src="images_asmar/canta1.png" />
+                <div class="rating">★★★★★</div>
+                <p class="name">Hotel Magique Love Tote</p>
+                <p class="price">$152</p>
+                <button class="add-btn">Add to cart</button>
+              </div>
+
+              <div class="product-card">
+                <div class="badge">45 sold</div>
+                <img src="images_asmar/canta2.svg" />
+                <div class="rating">★★★★★</div>
+                <p class="name">Hotel Magique Love Tote</p>
+                <p class="price">$128</p>
+                <button class="add-btn">Add to cart</button>
+              </div>
+
+              <div class="product-card">
+                <div class="badge">78 sold</div>
+                <img src="images_asmar/canta2.svg" />
+                <div class="rating">★★★★★</div>
+                <p class="name">Hotel Magique Love Tote</p>
+                <p class="price">$101</p>
+                <button class="add-btn">Add to cart</button>
+              </div>
+
+              <div class="product-card">
+                <div class="badge">78 sold</div>
+                <img src="images_asmar/canta1.png" />
+                <div class="rating">★★★★★</div>
+                <p class="name">Hotel Magique Love Tote</p>
+                <p class="price">$101</p>
+                <button class="add-btn">Add to cart</button>
+              </div>
+
+              <div class="product-card">
+                <div class="badge">78 sold</div>
+                <img src="images_asmar/canta1.png" />
+                <div class="rating">★★★★★</div>
+                <p class="name">Hotel Magique Love Tote</p>
+                <p class="price">$101</p>
+                <button class="add-btn">Add to cart</button>
+              </div>
+
+              <div class="product-card">
+                <div class="badge">78 sold</div>
+                <img src="images_asmar/canta2.svg" />
+                <div class="rating">★★★★★</div>
+                <p class="name">Hotel Magique Love Tote</p>
+                <p class="price">$101</p>
+                <button class="add-btn">Add to cart</button>
+              </div>
+
+              <div class="product-card">
+                <div class="badge">78 sold</div>
+                <img src="images_asmar/canta1.png" />
+                <div class="rating">★★★★★</div>
+                <p class="name">Hotel Magique Love Tote</p>
+                <p class="price">$101</p>
+                <button class="add-btn">Add to cart</button>
+              </div>
+
+              <div class="product-card">
+                <div class="badge">78 sold</div>
+                <img src="images_asmar/canta2.svg" />
+                <div class="rating">★★★★★</div>
+                <p class="name">Hotel Magique Love Tote</p>
+                <p class="price">$101</p>
+                <button class="add-btn">Add to cart</button>
+              </div>
+            </div>
+
+            <button class="arrow right" data-target="bestseller">
+              &#10095;
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="scroll-section">
+        <div class="container">
+          <h2 class="title">Discount Products</h2>
+          <div class="scroll-wrapper">
+            <button class="arrow left" data-target="discount">&#10094;</button>
+
+            <div class="scroll-container" id="discount">
+              <div class="product-card">
+                <div class="badge">-20%</div>
+                <img src="images_asmar/image1.png" />
+                <div class="rating">★★★★☆</div>
+                <p class="name">Special Discount Bag</p>
+                <p class="price">$80</p>
+                <button class="add-btn">Add to cart</button>
+              </div>
+
+              <div class="product-card">
+                <div class="badge">-30%</div>
+                <img src="images_asmar/image2.png" />
+                <div class="rating">★★★★★</div>
+                <p class="name">Premium Leather Bag</p>
+                <p class="price">$69</p>
+                <button class="add-btn">Add to cart</button>
+              </div>
+
+              <div class="product-card">
+                <div class="badge">-30%</div>
+                <img src="images_asmar/image2.png" />
+                <div class="rating">★★★★★</div>
+                <p class="name">Premium Leather Bag</p>
+                <p class="price">$69</p>
+                <button class="add-btn">Add to cart</button>
+              </div>
+
+              <div class="product-card">
+                <div class="badge">-30%</div>
+                <img src="images_asmar/image1.png" />
+                <div class="rating">★★★★★</div>
+                <p class="name">Premium Leather Bag</p>
+                <p class="price">$69</p>
+                <button class="add-btn">Add to cart</button>
+              </div>
+
+              <div class="product-card">
+                <div class="badge">-30%</div>
+                <img src="images_asmar/image1.png" />
+                <div class="rating">★★★★★</div>
+                <p class="name">Premium Leather Bag</p>
+                <p class="price">$69</p>
+                <button class="add-btn">Add to cart</button>
+              </div>
+
+              <div class="product-card">
+                <div class="badge">-30%</div>
+                <img src="images_asmar/image1.png" />
+                <div class="rating">★★★★★</div>
+                <p class="name">Premium Leather Bag</p>
+                <p class="price">$69</p>
+                <button class="add-btn">Add to cart</button>
+              </div>
+            </div>
+
+            <button class="arrow right" data-target="discount">&#10095;</button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="upper-footer">
+          <div class="logo">
+            <h1>Snobella</h1>
+          </div>
+          <form class="search-bar">
+            <input type="text" placeholder="Search all product" />
+            <button type="submit">
+              <img src="images_ilaha/search 1.svg" alt="Search Icon" />
+            </button>
+          </form>
+        </div>
+      </div>
+      <hr />
+      <div class="container">
+        <div class="bottom-footer">
+          <div class="main-part">
+            <div class="mail-text">
+              <p>
+                The wise man therefore always holds selection. The wise man
+                therefore always rejects pleasures to secure other greater
+              </p>
+              <div class="mail">
+                <img src="images_ilaha/email (3) 1.svg" />
+                <span>Snobella@gmail.com</span>
+              </div>
+            </div>
+            <div class="phone-message">
+              <div class="phone">
+                <img src="images_ilaha/telephone.png" />
+                <span>+748 383 23 14</span>
+              </div>
+              <button class="message-btn">
+                <img src="images_ilaha/send 1.svg" />
+                Send message
+              </button>
+            </div>
+          </div>
+          <div class="about">
+            <div class="each">
+              <h5>Shop</h5>
+              <a href="#">Shoulder Bag</a>
+              <a href="#">Backpack</a>
+              <a href="#">Tote Bag</a>
+              <a href="#">Hand Bag</a>
+              <a href="#">Evening Bag</a>
+              <a href="#">Purse</a>
+            </div>
+            <div class="each">
+              <h5>Company</h5>
+              <a href="#">About Us</a>
+              <a href="#">Contact</a>
+              <a href="#">Terms of Use</a>
+              <a href="#">Customer of Service</a>
+            </div>
+            <div class="each">
+              <h5>Help</h5>
+              <a href="#">FAQ</a>
+              <a href="#">Delivery</a>
+              <a href="#">Cancellation of the order</a>
+              <a href="#">Don't go back</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <div class="container">
+          <div class="end-footer">
+            <p>&copy; 2020. All rights reserved.</p>
+            <div class="social-medias">
+              <img src="images_ilaha/facebook (6).svg" />
+              <img src="images_ilaha/instagram (1).svg" />
+              <img src="images_ilaha/whatsapp.svg" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="index.js"></script>
+  </body>
 </html>
