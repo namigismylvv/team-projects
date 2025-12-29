@@ -1,3 +1,95 @@
+// ===== HERO SLIDER INITIALIZATION =====
+class HeroSlider {
+  constructor() {
+    // DOM Elements
+    this.sliderTrack = document.querySelector(".hero__slider");
+    this.slides = document.querySelectorAll(".hero__slide");
+    this.dotsContainer = document.querySelector(".sliderbtns");
+
+    // State
+    this.currentIndex = 0;
+    this.totalSlides = this.slides.length;
+    this.intervalTime = 5000; // 5 seconds
+    this.autoplayInterval = null;
+
+    // Initialize
+    this.init();
+  }
+
+  init() {
+    if (!this.sliderTrack || !this.dotsContainer) return;
+
+    // Generate dots based on slide count
+    this.generateDots();
+
+    // Set up event listeners
+    this.setupDotClickListeners();
+
+    // Start automatic slider
+    this.startAutoplay();
+  }
+
+  generateDots() {
+    // Clear existing dots
+    this.dotsContainer.innerHTML = "";
+
+    // Create dots dynamically matching slide count
+    for (let i = 0; i < this.totalSlides; i++) {
+      const dot = document.createElement("div");
+      dot.classList.add("slider-dot");
+      if (i === 0) dot.classList.add("active");
+      dot.setAttribute("data-slide", i);
+      this.dotsContainer.appendChild(dot);
+    }
+  }
+
+  setupDotClickListeners() {
+    const dots = this.dotsContainer.querySelectorAll(".slider-dot");
+    dots.forEach((dot) => {
+      dot.addEventListener("click", (e) => {
+        const slideIndex = parseInt(e.target.getAttribute("data-slide"));
+        this.goToSlide(slideIndex);
+        this.restartAutoplay();
+      });
+    });
+  }
+
+  goToSlide(index) {
+    this.currentIndex = index;
+
+    // Update slider position
+    this.sliderTrack.style.transform = `translateX(-${this.currentIndex * 100}%)`;
+
+    // Update dot states
+    const dots = this.dotsContainer.querySelectorAll(".slider-dot");
+    dots.forEach((dot, i) => {
+      dot.classList.toggle("active", i === this.currentIndex);
+    });
+  }
+
+  nextSlide() {
+    const nextIndex = (this.currentIndex + 1) % this.totalSlides;
+    this.goToSlide(nextIndex);
+  }
+
+  startAutoplay() {
+    this.autoplayInterval = setInterval(() => {
+      this.nextSlide();
+    }, this.intervalTime);
+  }
+
+  restartAutoplay() {
+    clearInterval(this.autoplayInterval);
+    this.startAutoplay();
+  }
+}
+
+// Initialize slider when DOM is loaded
+document.addEventListener("DOMContentLoaded", () => {
+  new HeroSlider();
+});
+
+// ===== SCROLL SECTIONS (Products) =====
 const arrows = document.querySelectorAll(".arrow");
 
 arrows.forEach(btn => {
@@ -14,41 +106,3 @@ arrows.forEach(btn => {
     }
   });
 });
-
-  // SLAYDLARIN DATASI – özün istədiyin qədər əlavə et
-  
-
-  // DOM elementlərini götürürük
-   const sliderTrack = document.querySelector(".hero__slider");
-  const slides = document.querySelectorAll(".hero__slide");
-  const dots = document.querySelectorAll(".sliderbtns .dot");
-
-  let currentIndex = 0;
-  const totalSlides = slides.length;
-  const intervalTime = 4000; // 4 saniyədə bir dəyişsin
-
-  function goToSlide(index) {
-    if (index < 0) index = totalSlides - 1;
-    if (index >= totalSlides) index = 0;
-
-    currentIndex = index;
-
-    // Scroll effekti: track-i sola sürüşdürürük
-    sliderTrack.style.transform = `translateX(-${currentIndex * 100}%)`;
-
-    // Pagination yenilənməsi
-    dots.forEach((dot, i) => {
-      dot.classList.toggle("active", i === currentIndex);
-    });
-  }
-
-  // Avtomatik interval
-  setInterval(() => {
-    goToSlide(currentIndex + 1);
-  }, intervalTime);
-
-  // (istəsən dot-ları clickable da edə bilərsən)
-  dots.forEach((dot, i) => {
-    dot.addEventListener("click", () => {
-      goToSlide(i);
-    })});
